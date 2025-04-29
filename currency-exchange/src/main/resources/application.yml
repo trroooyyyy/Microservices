@@ -1,0 +1,18 @@
+server:
+    port: 8081
+spring:
+    application:
+        name: currency-exchange
+    datasource:
+        url: jdbc:postgresql://localhost:5432/currency-exchange
+        username: trroooyyyy
+        password: "06062023"
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+
+
+
+
