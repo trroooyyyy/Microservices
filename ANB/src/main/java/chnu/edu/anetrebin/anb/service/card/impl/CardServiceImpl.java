@@ -1,12 +1,15 @@
 package chnu.edu.anetrebin.anb.service.card.impl;
 
 import chnu.edu.anetrebin.anb.dto.requests.CardRequest;
+import chnu.edu.anetrebin.anb.dto.requests.external.NotificationRequest;
 import chnu.edu.anetrebin.anb.dto.responses.CardResponse;
+import chnu.edu.anetrebin.anb.enums.NotificationChannel;
 import chnu.edu.anetrebin.anb.exceptions.card.CardAlreadyExists;
 import chnu.edu.anetrebin.anb.exceptions.card.CardNotFoundException;
 import chnu.edu.anetrebin.anb.model.Card;
 import chnu.edu.anetrebin.anb.repository.CardRepository;
 import chnu.edu.anetrebin.anb.service.card.CardService;
+import chnu.edu.anetrebin.anb.service.external.NotificationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,12 +22,15 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class CardServiceImpl implements CardService {
     private final CardRepository cardRepository;
+    private final NotificationService notificationService;
 
     @Transactional
     @Override
     public void deleteAccount(Long id) {
         Card card = cardRepository.findById(id).orElseThrow(() -> new CardNotFoundException("Card not found with id: " + id));
         cardRepository.delete(card);
+        notificationService.createNotification(new NotificationRequest(card.getUser().getId(),
+                "Your card was successfully deleted!", NotificationChannel.IN_APP));
     }
 
     @Transactional(readOnly = true)
@@ -45,6 +51,9 @@ public class CardServiceImpl implements CardService {
         card.setCardNumber(cardRequest.cardNumber());
         card.setExpiryDate(cardRequest.expiryDate());
         card.setCvv(cardRequest.cvv());
+
+        notificationService.createNotification(new NotificationRequest(card.getUser().getId(),
+                "Your card was successfully updated!", NotificationChannel.IN_APP));
 
         return CardResponse.toResponse(cardRepository.save(card));
     }

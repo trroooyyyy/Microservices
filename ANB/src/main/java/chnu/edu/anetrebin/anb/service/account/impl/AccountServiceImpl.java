@@ -2,12 +2,15 @@ package chnu.edu.anetrebin.anb.service.account.impl;
 
 import chnu.edu.anetrebin.anb.dto.requests.AccountRequest;
 import chnu.edu.anetrebin.anb.dto.requests.external.CurrencyExchangeRequest;
+import chnu.edu.anetrebin.anb.dto.requests.external.NotificationRequest;
 import chnu.edu.anetrebin.anb.dto.responses.AccountResponse;
+import chnu.edu.anetrebin.anb.enums.NotificationChannel;
 import chnu.edu.anetrebin.anb.exceptions.account.AccountNotFoundException;
 import chnu.edu.anetrebin.anb.model.Account;
 import chnu.edu.anetrebin.anb.repository.AccountRepository;
 import chnu.edu.anetrebin.anb.service.account.AccountService;
 import chnu.edu.anetrebin.anb.service.external.CurrencyExchangeService;
+import chnu.edu.anetrebin.anb.service.external.NotificationService;
 import chnu.edu.anetrebin.anb.service.user.impl.UserServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -23,12 +26,15 @@ public class AccountServiceImpl implements AccountService {
     private final AccountRepository repository;
     private final CurrencyExchangeService currencyExchangeService;
     private final UserServiceImpl userService;
+    private final NotificationService notificationService;
 
     @Transactional
     @Override
     public void deleteAccount(Long id) {
         Account account = repository.findById(id).orElseThrow(() -> new AccountNotFoundException("Account not found with id: " + id));
         repository.delete(account);
+        notificationService.createNotification(new NotificationRequest(account.getUser().getId(),
+                "Your account was successfully deleted!", NotificationChannel.IN_APP));
     }
 
     @Transactional(readOnly = true)
@@ -52,7 +58,9 @@ public class AccountServiceImpl implements AccountService {
         account.setAccountName(accountRequest.accountName());
         account.setBalance(balance);
 
-        // TODO: Create Notifications
+        notificationService.createNotification(new NotificationRequest(account.getUser().getId(),
+                "Your account was successfully updated!", NotificationChannel.IN_APP));
+
         return AccountResponse.toResponse(repository.save(account));
     }
 

@@ -3,7 +3,9 @@ package chnu.edu.anetrebin.anb.service.user.impl;
 import chnu.edu.anetrebin.anb.dto.requests.AccountRequest;
 import chnu.edu.anetrebin.anb.dto.requests.CardRequest;
 import chnu.edu.anetrebin.anb.dto.requests.UserRequest;
+import chnu.edu.anetrebin.anb.dto.requests.external.NotificationRequest;
 import chnu.edu.anetrebin.anb.dto.responses.UserResponse;
+import chnu.edu.anetrebin.anb.enums.NotificationChannel;
 import chnu.edu.anetrebin.anb.exceptions.account.AccountCreationException;
 import chnu.edu.anetrebin.anb.exceptions.card.CardAlreadyExists;
 import chnu.edu.anetrebin.anb.exceptions.user.UserNotFoundException;
@@ -14,6 +16,7 @@ import chnu.edu.anetrebin.anb.model.User;
 import chnu.edu.anetrebin.anb.repository.AccountRepository;
 import chnu.edu.anetrebin.anb.repository.CardRepository;
 import chnu.edu.anetrebin.anb.repository.UserRepository;
+import chnu.edu.anetrebin.anb.service.external.NotificationService;
 import chnu.edu.anetrebin.anb.service.user.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -30,6 +33,7 @@ public class UserServiceImpl implements UserService {
     private final UserRepository repository;
     private final AccountRepository accountRepository;
     private final CardRepository cardRepository;
+    private final NotificationService notificationService;
 
     @Transactional
     @Override
@@ -56,7 +60,10 @@ public class UserServiceImpl implements UserService {
                 .phone(userRequest.phone())
                 .build();
 
-        repository.save(user);
+        User savedUser = repository.save(user);
+
+        notificationService.createNotification(new NotificationRequest(savedUser.getId(),
+                "Your profile was successfully created!", NotificationChannel.EMAIL));
     }
 
     @Transactional(readOnly = true)
@@ -96,6 +103,9 @@ public class UserServiceImpl implements UserService {
         user.setPhone(request.phone());
         user.setDateOfBirth(request.dateOfBirth());
 
+        notificationService.createNotification(new NotificationRequest(user.getId(),
+                "Your profile was successfully updated!", NotificationChannel.IN_APP));
+
         return UserResponse.toResponse(repository.save(user));
     }
 
@@ -103,6 +113,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUser(Long id) {
         User user = repository.findById(id).orElseThrow(() -> new UserNotFoundException("User not found with id: " + id));
+        notificationService.createNotification(new NotificationRequest(user.getId(),
+                "Your profile was successfully deleted!", NotificationChannel.EMAIL));
         repository.delete(user);
     }
 
@@ -122,6 +134,9 @@ public class UserServiceImpl implements UserService {
 
         user.addAccount(account);
         accountRepository.save(account);
+
+        notificationService.createNotification(new NotificationRequest(user.getId(),
+                "Your cash-account was successfully created!", NotificationChannel.IN_APP));
     }
 
     public String getAccountNumber(AccountRequest request) {
@@ -155,5 +170,7 @@ public class UserServiceImpl implements UserService {
         user.addCard(card);
         cardRepository.save(card);
 
+        notificationService.createNotification(new NotificationRequest(user.getId(),
+                "Your card was successfully added!", NotificationChannel.IN_APP));
     }
 }
