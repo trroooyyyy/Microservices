@@ -33,6 +33,7 @@ public class AccountServiceImpl implements AccountService {
     public void deleteAccount(Long id) {
         Account account = repository.findById(id).orElseThrow(() -> new AccountNotFoundException("Account not found with id: " + id));
         repository.delete(account);
+
         notificationService.createNotification(new NotificationRequest(account.getUser().getId(),
                 "Your account was successfully deleted!", NotificationChannel.IN_APP));
     }
@@ -68,5 +69,29 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public List<AccountResponse> getAllAccounts() {
         return repository.findAllByOrderByIdAsc().stream().map(AccountResponse::toResponse).collect(Collectors.toList());
+    }
+
+    @Transactional
+    public void addBalance(Long id, BigDecimal request) {
+        Account account = repository.findById(id).orElseThrow(() -> new AccountNotFoundException("Account not found with id: " + id));
+
+        account.setBalance(account.getBalance().add(request));
+
+        repository.save(account);
+
+        notificationService.createNotification(new NotificationRequest(account.getUser().getId(),
+                "Your account " + account.getAccountNumber() + " was successfully increased by " + request + account.getCurrency() + "!", NotificationChannel.IN_APP));
+    }
+
+    @Transactional
+    public void subtractBalance(Long id, BigDecimal request) {
+        Account account = repository.findById(id).orElseThrow(() -> new AccountNotFoundException("Account not found with id: " + id));
+
+        account.setBalance(account.getBalance().subtract(request));
+
+        repository.save(account);
+
+        notificationService.createNotification(new NotificationRequest(account.getUser().getId(),
+                "Your account " + account.getAccountNumber() + " was successfully decreased by " + request + account.getCurrency() + "!", NotificationChannel.IN_APP));
     }
 }

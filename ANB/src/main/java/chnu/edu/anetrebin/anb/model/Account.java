@@ -54,12 +54,6 @@ public class Account {
     @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt;
 
-    @OneToMany(mappedBy = "senderAccount", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Transaction> sentTransactions;
-
-    @OneToMany(mappedBy = "receiverAccount", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Transaction> receivedTransactions;
-
     @PrePersist
     protected void onCreate() {
         this.balance = BigDecimal.valueOf(100);

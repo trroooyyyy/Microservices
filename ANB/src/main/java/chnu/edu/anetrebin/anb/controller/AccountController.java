@@ -5,10 +5,12 @@ import chnu.edu.anetrebin.anb.dto.responses.AccountResponse;
 import chnu.edu.anetrebin.anb.service.account.AccountService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -37,5 +39,17 @@ public class AccountController {
     public ResponseEntity<Void> deleteAccount(@PathVariable Long id) {
         accountService.deleteAccount(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping("/addBalance/{id}")
+    public ResponseEntity<Void> addBalance(@PathVariable Long id, @Valid @RequestBody BigDecimal request) {
+        accountService.addBalance(id, request);
+        return ResponseEntity.status(HttpStatus.ACCEPTED).build();
+    }
+
+    @PutMapping("/subtractBalance/{id}")
+    public ResponseEntity<Void> subtractBalance(@PathVariable Long id, @Valid @RequestBody BigDecimal request) {
+        accountService.subtractBalance(id, request);
+        return ResponseEntity.status(HttpStatus.ACCEPTED).build();
     }
 }

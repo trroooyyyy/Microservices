@@ -16,5 +16,7 @@ currency-service:
         url: http://localhost:8081/api/v1/ce/getExchangedValue
 notification-service:
         url: http://localhost:8082/api/v1/notification/
+transaction-service:
+        url: http://localhost:8083/api/v1/transactions/
 
 

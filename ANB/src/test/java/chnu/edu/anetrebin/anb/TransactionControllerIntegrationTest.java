@@ -1,9 +1,7 @@
 package chnu.edu.anetrebin.anb;
 
 import chnu.edu.anetrebin.anb.controller.TransactionController;
-import chnu.edu.anetrebin.anb.dto.requests.TransactionRequest;
-import chnu.edu.anetrebin.anb.dto.responses.TransactionResponse;
-import chnu.edu.anetrebin.anb.enums.TransactionStatus;
+import chnu.edu.anetrebin.anb.dto.requests.external.TransactionRequest;
 import chnu.edu.anetrebin.anb.exceptions.transaction.TransactionNotFoundException;
 import chnu.edu.anetrebin.anb.service.transaction.TransactionService;
 import com.fasterxml.jackson.databind.ObjectMapper;

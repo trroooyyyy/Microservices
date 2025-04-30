@@ -1,4 +1,4 @@
-package chnu.edu.anetrebin.anb.enums;
+package chnu.edu.anetrebin.transactionprocessor.enums;
 
 import lombok.Getter;
 
@@ -11,5 +11,9 @@ public enum AccountStatus {
 
     AccountStatus(String description) {
         this.description = description;
+    }
+
+    public boolean isActive() {
+        return this == ACTIVE;
     }
 }

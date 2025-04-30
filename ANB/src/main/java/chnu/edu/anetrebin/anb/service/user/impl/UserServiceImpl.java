@@ -62,6 +62,7 @@ public class UserServiceImpl implements UserService {
 
         User savedUser = repository.save(user);
 
+        // TODO: Catch exceptions here
         notificationService.createNotification(new NotificationRequest(savedUser.getId(),
                 "Your profile was successfully created!", NotificationChannel.EMAIL));
     }
