@@ -5,8 +5,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/ANB/pom.xml" />
-        <option value="$PROJECT_DIR$/currency-exchange/pom.xml" />
         <option value="$PROJECT_DIR$/notification/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/currency-exchange/pom.xml" />
         <option value="$PROJECT_DIR$/transaction-processor/pom.xml" />
       </list>
     </option>

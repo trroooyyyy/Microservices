@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="422c9db9-276b-41bc-a7d1-f5d50a56f3ea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANB/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANB/src/main/java/chnu/edu/anetrebin/anb/AnbApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ANB/src/main/java/chnu/edu/anetrebin/anb/AnbApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANB/src/main/java/chnu/edu/anetrebin/anb/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ANB/src/main/java/chnu/edu/anetrebin/anb/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANB/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ANB/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange/src/main/java/chnu/edu/anetrebin/currencyexchange/CurrencyExchangeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange/src/main/java/chnu/edu/anetrebin/currencyexchange/CurrencyExchangeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/chnu/edu/anetrebin/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/chnu/edu/anetrebin/notification/NotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-processor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/TransactionProcessorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/TransactionProcessorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-processor/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "trroooyyyy"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/trroooyyyy/Microservices.git",
+    "accountId": "a2debea2-43b2-4ae0-9ee0-df91717d311e"
+  }
+}]]></component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2wU6cIvFe1dvdELpmaTCNpGYn8Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AnbApplication.executor": "Run",
+    "Spring Boot.CurrencyExchangeApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.NotificationApplication.executor": "Run",
+    "Spring Boot.TransactionProcessorApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AnbApplication">
+    <configuration name="AnbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ANB" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="chnu.edu.anetrebin.anb.AnbApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyExchangeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="currency-exchange" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="chnu.edu.anetrebin.currencyexchange.CurrencyExchangeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="chnu.edu.anetrebin.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="chnu.edu.anetrebin.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionProcessorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="transaction-processor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="chnu.edu.anetrebin.transactionprocessor.TransactionProcessorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="422c9db9-276b-41bc-a7d1-f5d50a56f3ea" name="Changes" comment="" />
+      <created>1746083884875</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746083884875</updated>
+      <workItem from="1746083886109" duration="4078000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

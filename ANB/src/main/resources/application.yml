@@ -13,10 +13,12 @@ spring:
             ddl-auto: update
         show-sql: true
 currency-service:
-        url: http://localhost:8081/api/v1/ce/getExchangedValue
+        url: http://CURRENCY-EXCHANGE/api/v1/ce/getExchangedValue
 notification-service:
-        url: http://localhost:8082/api/v1/notification/
+        url: http://NOTIFICATION/api/v1/notification/
 transaction-service:
-        url: http://localhost:8083/api/v1/transactions/
-
-
+        url: http://TRANSACTION-PROCESSOR/api/v1/transactions/
+eureka:
+    client:
+        service-url:
+            defaultZone=http://localhost:8761/eureka/:
