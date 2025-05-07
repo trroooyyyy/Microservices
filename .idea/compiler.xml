@@ -10,7 +10,7 @@
         <module name="currency-exchange" />
         <module name="eureka-server" />
       </profile>
-      <profile name="Annotation profile for transaction-processor" enabled="true">
+      <profile name="Annotation profile for notification" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />

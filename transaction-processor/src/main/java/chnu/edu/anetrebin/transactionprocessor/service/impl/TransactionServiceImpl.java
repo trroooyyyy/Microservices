@@ -5,6 +5,8 @@ import chnu.edu.anetrebin.transactionprocessor.dto.request.TransactionRequest;
 import chnu.edu.anetrebin.transactionprocessor.dto.response.external.AccountResponse;
 import chnu.edu.anetrebin.transactionprocessor.enums.TransactionStatus;
 import chnu.edu.anetrebin.transactionprocessor.exceptions.TransactionException;
+import chnu.edu.anetrebin.transactionprocessor.kafka.KafkaProducer;
+import chnu.edu.anetrebin.transactionprocessor.kafka.messages.TransactionMessage;
 import chnu.edu.anetrebin.transactionprocessor.model.Transaction;
 import chnu.edu.anetrebin.transactionprocessor.repository.TransactionRepository;
 import chnu.edu.anetrebin.transactionprocessor.service.TransactionService;
@@ -23,6 +25,7 @@ public class TransactionServiceImpl implements TransactionService {
     private final TransactionRepository transactionRepository;
     private final CurrencyExchangeService currencyExchangeService;
     private final AccountService accountService;
+    private final KafkaProducer kafkaProducer;
 
     @Transactional
     @Override
@@ -46,6 +49,10 @@ public class TransactionServiceImpl implements TransactionService {
 
             transaction.setStatus(TransactionStatus.COMPLETED);
             transactionRepository.save(transaction);
+
+            kafkaProducer.sendMessage(
+                    "test",
+                    "Transaction created successfully. Amount: " + transactionRequest.amount());
         } catch (Exception e) {
             transaction.setStatus(TransactionStatus.FAILED);
             transactionRepository.save(transaction);
@@ -66,6 +73,14 @@ public class TransactionServiceImpl implements TransactionService {
         if (sender.balance().compareTo(amount) < 0) {
             throw new TransactionException("Insufficient funds");
         }
+    }
+
+    public void sendMessage(String message) {
+        kafkaProducer.sendMessage("test", message);
+    }
+
+    public void sendObject(TransactionMessage message) {
+        kafkaProducer.sendObject(message);
     }
 
     @Transactional

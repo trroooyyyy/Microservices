@@ -1,6 +1,7 @@
 package chnu.edu.anetrebin.transactionprocessor.controller;
 
 import chnu.edu.anetrebin.transactionprocessor.dto.request.TransactionRequest;
+import chnu.edu.anetrebin.transactionprocessor.kafka.messages.TransactionMessage;
 import chnu.edu.anetrebin.transactionprocessor.model.Transaction;
 import chnu.edu.anetrebin.transactionprocessor.service.TransactionService;
 import jakarta.validation.Valid;
@@ -28,5 +29,17 @@ public class TransactionController {
     @GetMapping("/")
     public ResponseEntity<List<Transaction>> getAllTransactions() {
         return ResponseEntity.ok(transactionService.getAllTransactions());
+    }
+
+    @PostMapping("/sendMessage")
+    public ResponseEntity<Void> sendMessage(@RequestBody String message) {
+        transactionService.sendMessage(message);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+
+    @PostMapping("/sendObject")
+    public ResponseEntity<Void> sendObject(@RequestBody @Valid TransactionMessage transactionMessage) {
+        transactionService.sendObject(transactionMessage);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }
