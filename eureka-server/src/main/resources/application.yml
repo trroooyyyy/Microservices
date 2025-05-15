@@ -1,9 +1,10 @@
-eureka:
-    client:
-        fetch-registry: false
-        register-with-eureka: false
-server:
-    port: 8761
 spring:
     application:
         name: eureka-server
+    profiles:
+        active: dev
+    config:
+        import: "configserver:http://localhost:8888"
+    cloud:
+        config:
+            fail-fast: true

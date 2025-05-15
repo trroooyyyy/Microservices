@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="422c9db9-276b-41bc-a7d1-f5d50a56f3ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/chnu/edu/anetrebin/notification/kafka/KafkaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/chnu/edu/anetrebin/notification/kafka/KafkaConsumerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/chnu/edu/anetrebin/notification/kafka/messages/TransactionMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/kafka/KafkaProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/kafka/KafkaProducerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/kafka/KafkaTopic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/kafka/messages/TransactionMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANB/src/main/java/chnu/edu/anetrebin/anb/controller/TitleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANB/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANB/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ANB/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-processor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/service/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/service/impl/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/src/main/java/chnu/edu/anetrebin/transactionprocessor/service/impl/TransactionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-processor/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,32 +68,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AnbApplication.executor": "Run",
-    "Spring Boot.CurrencyExchangeApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.NotificationApplication.executor": "Run",
-    "Spring Boot.TransactionProcessorApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Projects/Microservices",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AnbApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CurrencyExchangeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NotificationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TransactionProcessorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Microservices&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -119,6 +121,13 @@
     <configuration name="AnbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ANB" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="chnu.edu.anetrebin.anb.AnbApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="chnu.edu.anetrebin.configserver.ConfigServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,7 +161,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -165,6 +176,7 @@
     </configuration>
     <list>
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.NotificationApplication" />
       <item itemvalue="Spring Boot.AnbApplication" />
       <item itemvalue="Spring Boot.CurrencyExchangeApplication" />
@@ -195,11 +207,22 @@
       <updated>1746083884875</updated>
       <workItem from="1746083886109" duration="8720000" />
       <workItem from="1746199602926" duration="531000" />
-      <workItem from="1746634212661" duration="10150000" />
+      <workItem from="1746634212661" duration="10481000" />
+      <workItem from="1746645682382" duration="430000" />
+      <workItem from="1746692804994" duration="737000" />
+      <workItem from="1746706899608" duration="2262000" />
+      <workItem from="1747154096176" duration="496000" />
+      <workItem from="1747155734004" duration="709000" />
+      <workItem from="1747229690933" duration="9215000" />
+      <workItem from="1747293172283" duration="3170000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
