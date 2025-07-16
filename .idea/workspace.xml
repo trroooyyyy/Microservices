@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="422c9db9-276b-41bc-a7d1-f5d50a56f3ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ANB/src/main/java/chnu/edu/anetrebin/anb/controller/TitleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ANB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANB/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ANB/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ANB/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-exchange/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-exchange/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-processor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-processor/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-processor/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +201,8 @@
       <workItem from="1747154096176" duration="496000" />
       <workItem from="1747155734004" duration="709000" />
       <workItem from="1747229690933" duration="9215000" />
-      <workItem from="1747293172283" duration="3170000" />
+      <workItem from="1747293172283" duration="5622000" />
+      <workItem from="1752664128923" duration="572000" />
     </task>
     <servers />
   </component>
